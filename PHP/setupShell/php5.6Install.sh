@@ -44,19 +44,19 @@ printf "\n========= source package download completed =========\n\n"
 printf "========= zlib install start... =========\n\n"
 
 if [ ! -f /usr/local/lib/libz.so ]; then
-	if [ -s zlib-1.2.8.tar.gz ]; then
-		echo "zlib-1.2.8.tar.gz [found]"
+	if [ -s zlib-1.2.7.tar.gz ]; then
+		echo "zlib-1.2.7.tar.gz [found]"
 	else
-		echo "zlib-1.2.8.tar.gz download now..."
-		wget http://sourceforge.net/projects/libpng/files/zlib/1.2.8/zlib-1.2.8.tar.gz
+		echo "zlib-1.2.7.tar.gz download now..."
+		wget http://sourceforge.net/projects/libpng/files/zlib/1.2.7/zlib-1.2.7.tar.gz
 	fi
 
-	if [ -s zlib-1.2.8 ]; then
-		rm -rf zlib-1.2.8
+	if [ -s zlib-1.2.7 ]; then
+		rm -rf zlib-1.2.7
 	fi
-	tar zxvf zlib-1.2.8.tar.gz
+	tar zxvf zlib-1.2.7.tar.gz
 
-	cd zlib-1.2.8
+	cd zlib-1.2.7
 	./configure --prefix=/usr/local
 	make
 	make install
@@ -104,19 +104,19 @@ printf "\n========== gettext install end ==========\n\n"
 printf "========= jpeg install start... =========\n\n"
 
 if [ ! -f /usr/local/lib/libjpeg.so ]; then
-	if [ -s jpegsrc.v9a.tar.gz ]; then
-		echo "jpegsrc.v9a.tar.gz [found]"
+	if [ -s jpegsrc.v9.tar.gz ]; then
+		echo "jpegsrc.v9.tar.gz [found]"
 	else
-		echo "jpegsrc.v9a.tar.gz download now..."
-		wget http://www.ijg.org/files/jpegsrc.v9a.tar.gz
+		echo "jpegsrc.v9.tar.gz download now..."
+		wget http://www.ijg.org/files/jpegsrc.v9.tar.gz
 	fi
 
-	if [ -s jpeg-9a ]; then
-		rm -rf jpeg-9a
+	if [ -s jpeg-9 ]; then
+		rm -rf jpeg-9
 	fi
-	tar zxvf jpegsrc.v9a.tar.gz
+	tar zxvf jpegsrc.v9.tar.gz
 
-	cd jpeg-9a
+	cd jpeg-9
 	./configure --prefix=/usr/local
 	make
 	make install
@@ -134,19 +134,19 @@ printf "\n========== jpeg install end ==========\n\n"
 printf "========= libpng install start... =========\n\n"
 
 if [ ! -f /usr/local/lib/libpng.so ]; then
-	if [ -s libpng-1.6.2.tar.gz ]; then
-		echo "libpng-1.6.2.tar.gz [found]"
+	if [ -s libpng-1.5.9.tar.gz ]; then
+		echo "libpng-1.5.9.tar.gz [found]"
 	else
-		echo "libpng-1.6.2.tar.gz download now..."
-		wget http://prdownloads.sourceforge.net/libpng/libpng-1.6.2.tar.gz
+		echo "libpng-1.5.9.tar.gz download now..."
+		wget http://prdownloads.sourceforge.net/libpng/libpng-1.5.9.tar.gz
 	fi
 
-	if [ -s libpng-1.6.2 ]; then
-		rm -rf libpng-1.6.2
+	if [ -s libpng-1.5.9 ]; then
+		rm -rf libpng-1.5.9
 	fi
-	tar zxvf libpng-1.6.2.tar.gz
+	tar zxvf libpng-1.5.9.tar.gz
 
-	cd libpng-1.6.2
+	cd libpng-1.5.9
 	./configure --prefix=/usr/local
 	make
 	make install
@@ -164,19 +164,19 @@ printf "\n========== libpng install end ==========\n\n"
 printf "========= freetype install start... =========\n\n"
 
 if [ ! -f /usr/local/lib/libfreetype.so ]; then
-	if [ -s freetype-2.5.5.tar.gz ]; then
-		echo "freetype-2.5.5.tar.gz [found]"
+	if [ -s freetype-2.5.0.1.tar.gz ]; then
+		echo "freetype-2.5.0.1.tar.gz [found]"
 	else
-		echo "freetype-2.5.5.tar.gz download now..."
-		wget http://download.savannah.gnu.org/releases/freetype/freetype-2.5.5.tar.gz
+		echo "freetype-2.5.0.1.tar.gz download now..."
+		wget http://download.savannah.gnu.org/releases/freetype/freetype-2.5.0.1.tar.gz
 	fi
 
-	if [ -s freetype-2.5.5 ]; then
-		rm -rf freetype-2.5.5
+	if [ -s freetype-2.5.0.1 ]; then
+		rm -rf freetype-2.5.0.1
 	fi
-	tar zxvf freetype-2.5.5.tar.gz
+	tar zxvf freetype-2.5.0.1.tar.gz
 
-	cd freetype-2.5.5
+	cd freetype-2.5.0.1
 	./configure --prefix=/usr/local
 	make
 	make install
@@ -194,19 +194,19 @@ printf "\n========== freetype install end ==========\n\n"
 printf "========= libgd install start... =========\n\n"
 
 if [ ! -f /usr/local/lib/libgd.so ]; then
-	if [ -s libgd-2.1.1.tar.gz ]; then
-		echo "libgd-2.1.1.tar.gz [found]"
+	if [ -s libgd-2.2.2.tar.gz ]; then
+		echo "libgd-2.2.2.tar.gz [found]"
 	else
-		echo "libgd-2.1.1.tar.gz download now..."
-		wget http://fossies.org/linux/www/libgd-2.1.1.tar.gz
+		echo "libgd-2.2.2.tar.gz download now..."
+		wget http://fossies.org/linux/www/libgd-2.2.2.tar.gz
 	fi
 
-	if [ -s libgd-2.1.1 ]; then
-		rm -rf libgd-2.1.1
+	if [ -s libgd-2.2.2 ]; then
+		rm -rf libgd-2.2.2
 	fi
-	tar zxvf libgd-2.1.1.tar.gz
+	tar zxvf libgd-2.2.2.tar.gz
 
-	cd libgd-2.1.1
+	cd libgd-2.2.2
 	./configure --prefix=/usr/local --with-zlib=/usr/local --with-png=/usr/local --with-freetype=/usr/local --with-jpeg=/usr/local
 	make
 	make install
