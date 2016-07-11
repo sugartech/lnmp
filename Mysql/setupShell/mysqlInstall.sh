@@ -26,7 +26,7 @@ if [ -s mysql-5.6.27.tar.gz ]; then
   echo "mysql-5.6.27.tar.gz [found]"
 else
   echo "mysql-5.6.27.tar.gz download now..."
-  wget http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-5.6.27.tar.gz  
+  wget http://cdn.mysql.com//archives/mysql-5.6/mysql-5.6.27.tar.gz  
 fi
 
 mariadbMd5=`md5sum mysql-5.6.27.tar.gz | awk '{print $1}'`
