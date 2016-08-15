@@ -48,7 +48,7 @@ if [ ! -f /usr/local/lib/libz.so ]; then
 		echo "zlib-1.2.7.tar.gz [found]"
 	else
 		echo "zlib-1.2.7.tar.gz download now..."
-		wget http://sourceforge.net/projects/libpng/files/zlib/1.2.7/zlib-1.2.7.tar.gz
+		wget http://pkgs.fedoraproject.org/repo/pkgs/mingw-zlib/zlib-1.2.7.tar.gz/md5/60df6a37c56e7c1366cca812414f7b85/zlib-1.2.7.tar.gz
 	fi
 
 	if [ -s zlib-1.2.7 ]; then
