@@ -198,7 +198,7 @@ if [ ! -f /usr/local/lib/libgd.so ]; then
 		echo "libgd-2.1.1.tar.gz [found]"
 	else
 		echo "libgd-2.1.1.tar.gz download now..."
-		wget http://fossies.org/linux/www/libgd-2.1.1.tar.gz
+		wget https://bitbucket.org/libgd/gd-libgd/downloads/libgd-2.1.1.tar.gz
 	fi
 
 	if [ -s libgd-2.1.1 ]; then
